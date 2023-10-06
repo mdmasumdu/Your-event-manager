@@ -1,13 +1,24 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from '/Red_Round_Creative_Agency_Logo_-removebg-preview.png'
+import { useContext } from "react";
+import { AuthContext } from "../Authprovider/Authprovider";
 
 
 const Nav = () => {
 
+  const {user,logout} = useContext(AuthContext)
+
+
+  const signout=()=>{
+    logout()
+    .then()
+    .catch()
+  }
+
     const  links =<>
     <NavLink to='/'>Home</NavLink>
     <NavLink to='/'>Blog</NavLink>
-    <NavLink to='/'>Registration</NavLink>
+    <NavLink to='/register'>Registration</NavLink>
     <NavLink to='/login'>Login</NavLink>
     <NavLink to='/'>Dashboard</NavLink>
     
@@ -35,12 +46,16 @@ const Nav = () => {
     </ul>
   </div>
   <div className="navbar-end">
-  <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-        <div className="w-10 rounded-full">
-          <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-        </div>
-      </label>
-    <a className="btn">Button</a>
+  {
+    user ? <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+    <div className="w-10 rounded-full">
+      <img src={user.photoURL} />
+    </div>
+  </label> : ""
+  }
+     {
+      user ? <a className="btn" onClick={signout}>SignOUt</a> : <Link className="btn" to="/login">Login</Link>
+     }
   </div>
 </div>
     );

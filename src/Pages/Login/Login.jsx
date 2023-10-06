@@ -1,7 +1,14 @@
+import { useContext } from "react";
+import google from '/logo2.png'
+import { AuthContext } from "../../Authprovider/Authprovider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Login = () => {
 
+// google singin context 
+  const {googlesignin,login} = useContext(AuthContext)
 
 
     const loginhandler =(e)=>{
@@ -11,13 +18,34 @@ const Login = () => {
 
         const email = form.get('email')
         const password = form.get('password')
-        console.log(email,password)
+        login(email,password)
+        .then(result=> {
+          console.log(result.user)
+          toast('succsfully logged in')
+        })
+        .catch(err=> toast(`${err.message}`))
 
 
 
     }
+
+// google sign in func
+    const googlesingin=()=>{
+      googlesignin()
+      .then(result=> {
+        console.log(result.user)
+        toast('Succsfully sign in')
+      })
+      .catch(err=>{
+        console.error(err)
+        toast('something went wrong')
+      })
+    }
+
+
     return (
         <div className="hero bg-white">
+           <ToastContainer />
   <div className="hero-content  w-full flex-col">
       <h1 className="text-5xl font-bold">Login now!</h1>
      
@@ -42,9 +70,13 @@ const Login = () => {
         <div className="form-control mt-6">
           <button className="btn bg-purple-600">Login</button>
         </div>
+        <img className='w-20' onClick={googlesingin} src={google} alt="" />
       </form>
+
+      
     </div>
   </div>
+ 
 </div>
     );
 };
