@@ -3,12 +3,14 @@
 import { createContext, useEffect, useState } from "react";
 
 export const AuthContext = createContext()
-import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import app from "../firbase/firebase.config";
 
 
 
 const Authprovider = ({children}) => {
+    
+const [loading,setloading] =useState(true)
 
     const [user,setUser] =useState(null)
 
@@ -19,6 +21,7 @@ const Authprovider = ({children}) => {
     // sign in with google
 
     const  googlesignin=()=>{
+        setloading(true)
 
         return signInWithPopup(auth,googleProvider)
     }
@@ -26,6 +29,7 @@ const Authprovider = ({children}) => {
 // signup with email and password
 
 const createuser =(email,password)=>{
+    setloading(true)
     return  createUserWithEmailAndPassword(auth,email,password)
  
  }
@@ -33,19 +37,30 @@ const createuser =(email,password)=>{
 // sign with email and password
 
 const login =(email,password)=>{
+    setloading(true)
     return signInWithEmailAndPassword(auth,email,password)
  
  }
 
 //  signout
 const logout=()=>{
-    signOut(auth)
+    setloading(true)
+  return  signOut(auth)
 }
 
+
+// update user profile
+const upadate =(name,photo)=>{
+    setloading(true)
+  return  updateProfile(auth.currentUser,{
+        displayName: name, photoURL: photo
+    })
+}
 // state observer
 useEffect(()=>{
 const unsubscribe = onAuthStateChanged(auth,(currentuser)=>{
     setUser(currentuser)
+    setloading(false)
 });
 return ()=>{
     unsubscribe()
@@ -63,7 +78,9 @@ return ()=>{
         createuser,
         login,
         logout,
-        user
+        user,
+        upadate,
+        loading
 
     }
     return (

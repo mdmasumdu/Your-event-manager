@@ -17,10 +17,14 @@ const Nav = () => {
 
     const  links =<>
     <NavLink to='/'>Home</NavLink>
-    <NavLink to='/'>Blog</NavLink>
-    <NavLink to='/register'>Registration</NavLink>
-    <NavLink to='/login'>Login</NavLink>
-    <NavLink to='/'>Dashboard</NavLink>
+    
+    {
+      user ?  '': <NavLink to='/register'>Registration</NavLink>
+    }
+    
+    {
+      user ?  <div><NavLink to='/order'>Order</NavLink> <NavLink to='/dashboard'>Dashboard</NavLink></div> : ""
+    }
     
     </>
     return (

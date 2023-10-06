@@ -3,9 +3,13 @@ import google from '/logo2.png'
 import { AuthContext } from "../../Authprovider/Authprovider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {  useLocation, useNavigate } from "react-router-dom";
 
 
 const Login = () => {
+
+  const location = useLocation()
+  const navigate = useNavigate()
 
 // google singin context 
   const {googlesignin,login} = useContext(AuthContext)
@@ -18,10 +22,13 @@ const Login = () => {
 
         const email = form.get('email')
         const password = form.get('password')
+
         login(email,password)
         .then(result=> {
           console.log(result.user)
           toast('succsfully logged in')
+          location.state ?   navigate(`${location.state}`) : navigate('/')
+          
         })
         .catch(err=> toast(`${err.message}`))
 
@@ -35,6 +42,7 @@ const Login = () => {
       .then(result=> {
         console.log(result.user)
         toast('Succsfully sign in')
+      location.state ?   navigate(`${location.state}`) : navigate('/')
       })
       .catch(err=>{
         console.error(err)

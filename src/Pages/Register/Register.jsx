@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Register = () => {
 
 // sing with email password context
-    const {createuser} = useContext(AuthContext)
+    const {createuser,upadate} = useContext(AuthContext)
     const registernhandler =(e)=>{
         e.preventDefault()
 
@@ -18,12 +18,25 @@ const Register = () => {
         const photo = form.get('photo')
         const email = form.get('email')
         const password = form.get('password')
+
+
+        if(password.length < 6){
+          return   toast("PASSWORD must be 6 character long or more")
+        }
+        else if(!/[A-Z]/.test(password)){
+          return  toast("PASSWORD must contain a capital letter")
+        }
+        else if(!/[^A-Za-z0-9]/.test(password)){
+           return  toast("Password should have a special character")
+        }
        
-        console.log(name, photo,email,password)
 
         createuser (email,password)
         .then(result=>{
             console.log(result.user)
+            upadate(name,photo)
+            .then(()=>{})
+            .catch(()=>{})
             toast('Succesfully registerd')
         })
         .catch(err=> toast(`${err.message}`))
