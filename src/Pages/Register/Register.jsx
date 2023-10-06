@@ -2,10 +2,13 @@ import { useContext } from "react";
 import { AuthContext } from "../../Authprovider/Authprovider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from "react-router-dom";
 
 
 
 const Register = () => {
+
+    const navigate = useNavigate()
 
 // sing with email password context
     const {createuser,upadate} = useContext(AuthContext)
@@ -38,6 +41,8 @@ const Register = () => {
             .then(()=>{})
             .catch(()=>{})
             toast('Succesfully registerd')
+            navigate('/')
+
         })
         .catch(err=> toast(`${err.message}`))
 
