@@ -1,10 +1,14 @@
 import { Outlet } from "react-router-dom";
+import Nav from "../Navbar/Nav";
+import Footer from "../Pages/Footer/Footer";
 
 
 const Mainlayout = () => {
     return (
-        <div>
+        <div className="bg-slate-400 text-black container mx-auto ">
+            <Nav></Nav>
             <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     );
 };

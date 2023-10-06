@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "category": "Weddings",
+      "name": "Elegant Wedding Package",
+      "image": "https://i.ibb.co/yhqPdTb/wedding-archway-backyard-happy-wedding-couple-outdoors-before-wedding-ceremony.jpg",
+      "price": 5000,
+      "short_description": "A luxurious wedding package that includes everything you need for your special day.",
+      "full_description": "Our Elegant Wedding Package is designed to make your big day truly unforgettable. It includes a stunning outdoor ceremony in a beautiful garden setting, a gourmet three-course dinner for your guests, professional photography and videography to capture every precious moment, and a dedicated wedding coordinator to ensure that every detail is perfect. With our package, you can relax and enjoy the most important day of your life."
+     
+    },
+    {
+      "id": 2,
+      "category": "Birthday Parties",
+      "name": "Ultimate Birthday Bash",
+      "image": "https://i.ibb.co/YLdBMhC/birthday-concept-with-happy-friends.jpg",
+      "price": 500,
+      "short_description": "A fantastic birthday party package with decorations, entertainment, and a delicious cake.",
+      "full_description": "The Ultimate Birthday Bash package is the perfect way to celebrate your special day with friends and family. We provide a beautifully decorated party venue, a live DJ to keep the music pumping, a wide variety of delicious snacks and beverages, and of course, a mouthwatering birthday cake. Whether you're turning 5 or 50, this package will make your birthday unforgettable."
+    
+    },
+    {
+      "id": 3,
+      "category": "Anniversaries",
+      "name": "Anniversary Celebration",
+      "image": "https://i.ibb.co/0YJVk0j/female-wedding-planner-working-with-bride-groom.jpg",
+      "price": 1200,
+      "short_description": "Celebrate your anniversary with a romantic getaway at a beautiful resort.",
+      "full_description": "Our Anniversary Celebration package is designed for couples looking to rekindle the romance on their special day. You'll enjoy a weekend getaway at a luxurious beachfront resort, complete with a candlelit dinner overlooking the ocean, a couples' spa day, and a bottle of champagne to toast to your love. Create lasting memories with this unforgettable anniversary package."
+      
+    },
+    {
+      "id": 4,
+      "category": "Engagement Parties",
+      "name": "Engagement Celebration",
+      "image": "https://i.ibb.co/BKYygXR/man-woman-celebrating-their-wedding-beach.jpg",
+      "price": 800,
+      "short_description": "Host a memorable engagement party with this all-inclusive package.",
+      "full_description": "Celebrate your engagement in style with our Engagement Celebration package. We provide a beautiful beachfront venue, a live band to set the mood, and a variety of delicious appetizers and drinks for your guests. Let us take care of the details so you can focus on sharing your joy with family and friends."
+  
+    },
+    {
+      "id": 5,
+      "category": "Retirement Parties",
+      "name": "Retirement Send-off Party",
+      "image": "https://i.ibb.co/kX90Ms9/happy-business-people-opening-bottle-champagne-while-celebrating-office-party.jpg",
+      "price": 400,
+      "short_description": "Give a heartfelt farewell to the retiree with this retirement party package.",
+      "full_description": "Bid farewell to your retiring colleague with a Retirement Send-off Party. Our package includes a stylish office party venue, a champagne toast, and a heartfelt tribute to honor the retiree's contributions. It's the perfect way to celebrate a well-deserved retirement."
+    
+    },
+    {
+      "id": 6,
+      "category": "Baby Shower",
+      "name": "Baby Shower Celebration",
+      "image": "https://i.ibb.co/prsdDP4/front-view-baby-shower-cake-concept.jpg",
+      "price": 250,
+      "short_description": "Host a joyful baby shower with decorations, games, and refreshments.",
+      "full_description": "Welcome the newest member of your family with a Baby Shower Celebration. We provide a charming venue, adorable decorations, fun baby shower games, and a delectable spread of snacks and treats. Let's shower the parents-to-be with love and create cherished memories."
+    }
+  ]
+  
