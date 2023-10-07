@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "role": "CEO",
+      "name": "John Miller",
+      "age": 45,
+      "experience": "15 years",
+      "email": "john@example.com",
+      "phone": "+1 (555) 123-4567",
+      "image": "https://i.ibb.co/4m3chdw/smiling-young-man-with-crossed-arms-outdoors-removebg-preview.png"
+    },
+    {
+      "id": 2,
+      "role": "Cook",
+      "name": "Maria Rodriguez",
+      "age": 30,
+      "experience": "10 years",
+      "email": "maria@example.com",
+      "phone": "+1 (555) 987-6543",
+      "image": "https://i.ibb.co/ysxFbdD/chef-with-his-arms-crossed-white-background-removebg-preview.png"
+    },
+    {
+      "id": 3,
+      "role": "Manager",
+      "name": "David Johnson",
+      "age": 38,
+      "experience": "12 years",
+      "email": "david@example.com",
+      "phone": "+1 (555) 789-0123",
+      "image": "https://i.ibb.co/FYtr4nf/handsome-young-man-with-new-stylish-haircut-removebg-preview.png"
+    },
+    {
+      "id": 4,
+      "role": "Staff",
+      "name": "Emily Davis",
+      "age": 26,
+      "experience": "3 years",
+      "email": "emily@example.com",
+      "phone": "+1 (555) 567-8901",
+      "image": "https://i.ibb.co/SVdKxpd/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-ta.png"
+    },
+    {
+      "id": 5,
+      "role": "Staff",
+      "name": "Michael Wilson",
+      "age": 29,
+      "experience": "5 years",
+      "email": "michael@example.com",
+      "phone": "+1 (555) 234-5678",
+      "image": "https://i.ibb.co/YtD4hDm/man-portrait-posing-loft-modern-space-removebg-preview-1.png"
+    },
+    {
+      "id": 6,
+      "role": "Staff",
+      "name": "Bear Grills",
+      "age": 24,
+      "experience": "2 years",
+      "email": "sarah@example.com",
+      "phone": "+1 (555) 345-6789",
+      "image": "https://i.ibb.co/hV4y7m9/businessman-with-crossed-arms-removebg-preview.png"
+    }
+  ]
+  

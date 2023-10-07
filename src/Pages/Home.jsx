@@ -3,6 +3,8 @@ import Banner from "./Bannner/Banner";
 import Services from "./Services/Services";
 import HappyClients from "./HappyClients/HappyClients";
 
+import Teams from "./Teams/Teams";
+
 
 
 const Home = () => {
@@ -20,7 +22,7 @@ const Home = () => {
                 }
             </div>
            </div>
-
+          <Teams></Teams>
            <HappyClients></HappyClients>
         </div>
     );

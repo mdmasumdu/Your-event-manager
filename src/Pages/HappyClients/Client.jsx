@@ -2,6 +2,8 @@
 
 
 const Client = ({client}) => {
+
+   
     return (
         <div className="text-center bg-slate-100 p-5 shadow-2xl">
             <div className="avatar">
