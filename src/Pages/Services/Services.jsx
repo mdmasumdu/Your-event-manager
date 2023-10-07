@@ -2,7 +2,6 @@
 
 import { useNavigate } from "react-router-dom";
 
-import '../../Style.css'
 const Services = ({service}) => {
 
     const {name, id,image, price, short_description}= service
@@ -14,8 +13,8 @@ const Services = ({service}) => {
   
     return (
         <div>
-           <div className="card shadow-xl  flex flex-col" data-aos="fade-up-right" data-aos-anchor-placement="top-center" data-aos-duration='300'>
-  <figure><img className="w-full h-72" src={image} alt="Shoes" /></figure>
+           <div className="card shadow-xl  flex flex-col" data-aos="fade-right"  data-aos-duration='1000'>
+  <figure><img className=" h-72" src={image} alt="Shoes" /></figure>
   <div className="card-body">
     <h2 className="card-title">
       {name}

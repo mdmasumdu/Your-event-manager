@@ -5,7 +5,7 @@ const Client = ({client}) => {
 
    
     return (
-        <div className="text-center bg-slate-100 p-5 shadow-2xl"  data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-duration='1000'>
+        <div className="text-center bg-slate-100 p-5 shadow-2xl"  data-aos="fade-right" data-aos-duration='1000'>
             <div className="avatar">
   <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
     <img src={client.image_link} />

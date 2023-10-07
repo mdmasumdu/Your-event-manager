@@ -4,7 +4,7 @@
 const Team = ({member}) => {
     const {role,name,age,experience,email,phone,image} = member
     return (
-        <div className="text-center bg-slate-100 shadow-2xl p-5 font-semibold text-xl" data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-duration='1000'>
+        <div className="text-center bg-slate-100 shadow-2xl p-5 font-semibold text-xl" data-aos="fade-right"  data-aos-duration='1000'>
             <div className="avatar">
             <div className="w-24 mx-auto rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
             <img src={image} />
