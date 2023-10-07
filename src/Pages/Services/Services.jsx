@@ -14,7 +14,7 @@ const Services = ({service}) => {
   
     return (
         <div>
-           <div className="card bg-slate-400 shadow-xl flex flex-col">
+           <div className="card bg-slate-300 shadow-xl flex flex-col">
   <figure><img className="w-full h-72" src={image} alt="Shoes" /></figure>
   <div className="card-body">
     <h2 className="card-title">

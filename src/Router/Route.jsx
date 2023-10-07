@@ -7,6 +7,7 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import Privateroute from "./Privateroute";
 import Dashboard from "../Pages/Dashboard/Dashboard";
+import Order from "../Orders/Order";
 
 const mycreatedroute = createBrowserRouter([
     {
@@ -35,6 +36,11 @@ const mycreatedroute = createBrowserRouter([
             {
                 path:"/dashboard",
                 element:<Privateroute><Dashboard></Dashboard></Privateroute>
+            },
+            {
+                path:"/order",
+                loader:()=>fetch('/DATA.json'),
+                element:<Privateroute><Order></Order></Privateroute>
             }
         ]
     }

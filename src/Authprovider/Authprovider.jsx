@@ -62,11 +62,13 @@ const unsubscribe = onAuthStateChanged(auth,(currentuser)=>{
     setUser(currentuser)
     setloading(false)
 });
-return ()=>{
+return ()=> {
     unsubscribe()
 }
 
-},[])
+
+
+},[auth])
 
    
 

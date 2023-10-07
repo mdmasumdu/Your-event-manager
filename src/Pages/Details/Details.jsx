@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { savetols } from "../../Utilities";
 
 const Details = () => {
     const {id}= useParams()
@@ -23,7 +24,7 @@ const Details = () => {
             <div className="flex flex-col items-center justify-center pb-10">
             <img className="w-2/3" src={image} alt="" />
             <p className="text-center font-bold text-4xl">Price: $ {price}</p>
-            <button className="btn mt-5 bg-purple-600  w-96">Book Now</button>
+            <button className="btn mt-5 bg-purple-600  w-96" onClick={()=>savetols(service.id)}>Book Now</button>
             </div>
             
           
