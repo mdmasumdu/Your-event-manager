@@ -1,7 +1,7 @@
 import banner from '/Banner2.jpg'
 const Banner = () => {
     return (
-        <div data-aos="fade-left"  data-aos-duration='1000'>
+        <div data-aos="fade-right"  data-aos-duration='1000'>
             <div className="hero min-h-screen" style={{backgroundImage: `url(${banner})`}}>
   <div className="hero-overlay bg-opacity-70"></div>
   <div className="hero-content text-center text-neutral-content">
