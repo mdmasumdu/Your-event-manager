@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "client_name": "Alice Johnson",
+      "rating": 5,
+      "comment": "I am thrilled with their services! It exceeded my expectations, and the customer service was outstanding.",
+      "image_link": "https://i.ibb.co/b74nLVL/bohemian-man-with-his-arms-crossed-removebg-preview.png"
+    },
+    {
+      "id": 2,
+      "client_name": "John Smith",
+      "rating": 4.5,
+      "comment": "Great experience overall. The quality of the service was excellent, and I am very satisfied with my purchase.",
+      "image_link": "https://i.ibb.co/60g0BS8/portrait-successful-man-having-stubble-posing-with-broad-smile-keeping-arms-folded-removebg-preview.png"
+    },
+    {
+      "id": 3,
+      "client_name": "Mahfuz Ahmed",
+      "rating": 5,
+      "comment": "I couldn't be more happier with the results. The team went above and beyond to make sure I was satisfied.",
+      "image_link": "https://i.ibb.co/g7zTWXL/mahfuz-removebg-preview.png"
+    },
+    {
+      "id": 4,
+      "client_name": "Michael Brown",
+      "rating": 4.8,
+      "comment": "The event was fantastic, and it was greater than expected. I'm a happy customer.",
+      "image_link": "https://i.ibb.co/889K0rg/smiling-business-man-removebg-preview.png"
+    },
+    {
+      "id": 5,
+      "client_name": "Sarah Miller",
+      "rating": 5,
+      "comment": "Outstanding service and support. I highly recommend this company. I'm a loyal customer now.",
+      "image_link": "https://i.ibb.co/XJg1Vjt/young-blogger-smiling-folding-paper-removebg-preview.png"
+    },
+    {
+      "id": 6,
+      "client_name": "David Wilson",
+      "rating": 4.7,
+      "comment": "I'm pleasantly surprised by the quality of the service. I would definitely do business with them again.",
+      "image_link": "https://i.ibb.co/kgLHyDT/jhh-removebg-preview.png"
+    }
+  ]
+  

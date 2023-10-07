@@ -14,7 +14,7 @@ const Services = ({service}) => {
   
     return (
         <div>
-           <div className="card bg-slate-300 shadow-xl flex flex-col">
+           <div className="card shadow-xl  flex flex-col">
   <figure><img className="w-full h-72" src={image} alt="Shoes" /></figure>
   <div className="card-body">
     <h2 className="card-title">
@@ -24,7 +24,7 @@ const Services = ({service}) => {
     
     <p className="h-20">{short_description}</p>
     <div className="badge badge-secondary h-6"> Price: $ {price}</div>
-   <button className="btn mt-5 bg-purple-600 " onClick={bookhandler}>Details</button>
+   <button className="btn mt-5 bg-black " onClick={bookhandler}>Details</button>
   </div>
 </div>
             

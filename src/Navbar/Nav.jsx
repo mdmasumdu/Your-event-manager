@@ -41,7 +41,7 @@ const Nav = () => {
     
     </>
     return (
-        <div className="navbar">
+        <div className="navbar bg-amber-400">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -74,7 +74,7 @@ const Nav = () => {
   </label> : ""
   }
      {
-      user ? <a className="btn" onClick={signout}>SignOUt</a> : <Link className="btn" to="/login">Login</Link>
+      user ? <a className="btn bg-purple-600" onClick={signout}>Logout</a> : <Link className="btn" to="/login">Login</Link>
      }
   </div>
 </div>

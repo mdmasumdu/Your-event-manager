@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "./Bannner/Banner";
 import Services from "./Services/Services";
+import HappyClients from "./HappyClients/HappyClients";
 
 
 
@@ -19,6 +20,8 @@ const Home = () => {
                 }
             </div>
            </div>
+
+           <HappyClients></HappyClients>
         </div>
     );
 };

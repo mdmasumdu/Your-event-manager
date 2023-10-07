@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../Authprovider/Authprovider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 
@@ -56,7 +56,7 @@ const Register = () => {
       <h1 className="text-5xl font-bold">Register now!</h1>
      
     
-    <div className="card  md:w-3/6 shadow-2xl bg-slate-400">
+    <div className="card  md:w-3/6 shadow-2xl bg-gradient-to-r from-cyan-500 via-cyan-500 to-blue-500">
       <form  onSubmit={registernhandler} className="card-body">
         <div className="form-control">
           <label className="label">
@@ -86,9 +86,12 @@ const Register = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn bg-purple-600">Register</button>
+          <button className="btn bg-black text-purple-300">Register</button>
         </div>
       </form>
+      <div>
+            <p className="md:ml-5 mb-5">Already Have an account? Please <Link className="text-purple-600" to='/login'>Login</Link></p>
+          </div>
     </div>
   </div>
 </div>

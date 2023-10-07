@@ -3,7 +3,7 @@ import google from '/logo2.png'
 import { AuthContext } from "../../Authprovider/Authprovider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import {  useLocation, useNavigate } from "react-router-dom";
+import {  Link, useLocation, useNavigate } from "react-router-dom";
 
 
 const Login = () => {
@@ -58,7 +58,7 @@ const Login = () => {
       <h1 className="text-5xl font-bold">Login now!</h1>
      
     
-    <div className="card  md:w-3/6 shadow-2xl bg-slate-400">
+    <div className="card  md:w-3/6 shadow-2x bg-gradient-to-r from-cyan-500 via-cyan-500 to-blue-500">
       <form  onSubmit={loginhandler} className="card-body">
         <div className="form-control">
           <label className="label">
@@ -76,10 +76,14 @@ const Login = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn bg-purple-600">Login</button>
+          <button className="btn bg-black text-purple-300">Login</button>
         </div>
-        <img className='w-20' onClick={googlesingin} src={google} alt="" />
+       
       </form>
+      <div>
+      <img className='w-20 ml-5' onClick={googlesingin} src={google} alt="" />
+            <p className="ml-5 mb-5">New Here? Please <Link className="text-purple-600" to='/register'>Register</Link></p>
+          </div>
 
       
     </div>

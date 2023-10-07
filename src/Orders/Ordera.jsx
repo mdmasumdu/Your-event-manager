@@ -6,7 +6,7 @@ const Ordera = ({order}) => {
     return (
         <div>
         
-        <div className="card bg-slate-300 w-96 shadow-xl">
+        <div className="card bg-amber-200 w-96 shadow-xl">
         
 <figure><img className=" h-72" src={image} alt="Shoes" /></figure>
 <div className="card-body">
