@@ -21,7 +21,7 @@ console.log(greetign);
 #### Answer:  A: `{}` . 
 
 <i>Write your explanation here</i>
--First greeting variable was declared with no value.Then it was reassigned with the value which is object that is why answer is A.
+-At first greeting variable was declared with no value.Then it was reassigned with the value which is object that is why answer is A.
 
 </p>
 </details>
