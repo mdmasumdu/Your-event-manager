@@ -16,27 +16,27 @@ const Nav = () => {
   }
 
     const  links =<>
-    <NavLink to='/'>Home</NavLink>
+    <NavLink className={({isActive})=>  isActive ? 'bg-slate-100 rounded p-1' : ""} to='/'>Home</NavLink>
     
     {
-      user ?  '': <NavLink to='/register'>Registration</NavLink>
+      user ?  '': <NavLink className={({isActive})=>  isActive ? 'bg-slate-100 rounded p-1' : ""} to='/register'>Registration</NavLink>
     }
     
     {
-      user ?  <div className="flex gap-5"><NavLink to='/order'>Order</NavLink> <NavLink to='/dashboard'>Dashboard</NavLink></div> : ""
+      user ?  <div className="flex gap-5"><NavLink className={({isActive})=>  isActive ? 'bg-slate-100 rounded p-1' : ""} to='/order'>Order</NavLink> <NavLink to='/dashboard'>Dashboard</NavLink></div> : ""
     }
     
     </>
 
     const  linka =<>
-    <NavLink to='/'>Home</NavLink>
+    <NavLink className={({isActive})=>  isActive ? 'bg-slate-100 rounded p-1' : ""} to='/'>Home</NavLink>
     
     {
-      user ?  '': <NavLink to='/register'>Registration</NavLink>
+      user ?  '': <NavLink className={({isActive})=>  isActive ? 'bg-slate-100 rounded p-1' : ""} to='/register'>Registration</NavLink>
     }
     
     {
-      user ?  <div className="flex flex-col"><NavLink to='/order'>Order</NavLink> <NavLink to='/dashboard'>Dashboard</NavLink></div> : ""
+      user ?  <div className="flex flex-col"><NavLink className={({isActive})=>  isActive ? 'bg-slate-100 rounded p-1' : ""} to='/order'>Order</NavLink> <NavLink to='/dashboard'>Dashboard</NavLink></div> : ""
     }
     
     </>
