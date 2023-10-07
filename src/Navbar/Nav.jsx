@@ -41,7 +41,7 @@ const Nav = () => {
     
     </>
     return (
-        <div className="navbar bg-amber-400">
+        <div className="navbar bg-amber-400"  data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-duration='1000'>
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">

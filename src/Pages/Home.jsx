@@ -4,10 +4,16 @@ import Services from "./Services/Services";
 import HappyClients from "./HappyClients/HappyClients";
 
 import Teams from "./Teams/Teams";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 
 
 const Home = () => {
+    useEffect(() => {
+        AOS.init();
+      }, []);
 
     const services = useLoaderData()
     console.log(services)
