@@ -58,7 +58,8 @@ const upadate =(name,photo)=>{
 }
 // state observer
 useEffect(()=>{
-const unsubscribe = onAuthStateChanged(auth,(currentuser)=>{
+    
+    const unsubscribe = onAuthStateChanged(auth,(currentuser)=>{
     setUser(currentuser)
     setloading(false)
 });

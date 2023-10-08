@@ -67,11 +67,11 @@ const Nav = () => {
      user?  <h1>{user?.displayName}</h1> : ""
     }
   {
-    user ? <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+    user ? <div className="avatar  ml-2 mr-2">
     <div className="w-10 rounded-full">
-      <img src={user?.photoURL} />
+      <img className="bg-white" src={user?.photoURL} />
     </div>
-  </label> : ""
+  </div> : ""
   }
      {
       user ? <a className="btn bg-purple-600" onClick={signout}>Logout</a> : <Link className="btn" to="/login">Login</Link>
