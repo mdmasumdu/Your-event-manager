@@ -83,7 +83,8 @@ return ()=> {
         logout,
         user,
         upadate,
-        loading
+        loading,
+        auth
 
     }
     return (

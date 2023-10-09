@@ -1,7 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { savetols } from "../../Utilities";
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 const Details = () => {
     const {id}= useParams()

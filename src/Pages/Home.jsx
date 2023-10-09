@@ -4,6 +4,7 @@ import Services from "./Services/Services";
 import HappyClients from "./HappyClients/HappyClients";
 
 import Teams from "./Teams/Teams";
+import { ToastContainer} from 'react-toastify';
 
 
 
@@ -15,6 +16,7 @@ const Home = () => {
     console.log(services)
     return (
         <div>
+            <ToastContainer></ToastContainer>
             <Banner></Banner>
            <div className="bg-white p-5">
            <h1 className="text-4xl font-bold text-center mt-10 mb-5">OUR SERVICES</h1>

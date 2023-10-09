@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Authprovider/Authprovider";
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import { Link, useNavigate } from "react-router-dom";
 
 
@@ -11,7 +10,7 @@ const Register = () => {
     const navigate = useNavigate()
 
 // sing with email password context
-    const {createuser,upadate} = useContext(AuthContext)
+    const {createuser,upadate,logout,auth} = useContext(AuthContext)
     const registernhandler =(e)=>{
         e.preventDefault()
 
@@ -24,13 +23,13 @@ const Register = () => {
 
 
         if(password.length < 6){
-          return   toast("PASSWORD must be 6 character long or more")
+          return   toast.error("PASSWORD must be 6 character long or more")
         }
         else if(!/[A-Z]/.test(password)){
-          return  toast("PASSWORD must contain a capital letter")
+          return  toast.error("PASSWORD must contain a capital letter")
         }
         else if(!/[^A-Za-z0-9]/.test(password)){
-           return  toast("Password should have a special character")
+           return  toast.error("Password should have a special character")
         }
        
 
@@ -40,11 +39,15 @@ const Register = () => {
             upadate(name,photo)
             .then(()=>{})
             .catch(()=>{})
-            toast('Succesfully registerd')
-            navigate('/')
+            toast.success('Succesfully registerd, log in now')
+
+            logout(auth)
+            .then(()=>{})
+            .catch(()=>{})
+            navigate('/login')
 
         })
-        .catch(err=> toast(`${err.message}`))
+        .catch(err=> toast.error(`${err.message}`))
 
 
 

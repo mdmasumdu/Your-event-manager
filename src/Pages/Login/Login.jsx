@@ -2,7 +2,7 @@ import { useContext } from "react";
 import google from '/logo2.png'
 import { AuthContext } from "../../Authprovider/Authprovider";
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 import {  Link, useLocation, useNavigate } from "react-router-dom";
 
 
@@ -26,8 +26,10 @@ const Login = () => {
         login(email,password)
         .then(result=> {
           console.log(result.user)
-          toast('succsfully logged in')
-          location.state ?   navigate(`${location.state}`) : navigate('/')
+          toast.success('succsfully logged in',{ onClose: ()=>{
+            location.state ?   navigate(`${location.state}`) : navigate('/')
+           }})
+         
           
         })
         .catch(err=> toast(`${err.message}`))
@@ -41,8 +43,11 @@ const Login = () => {
       googlesignin()
       .then(result=> {
         console.log(result.user)
-        toast('Succsfully sign in')
-      location.state ?   navigate(`${location.state}`) : navigate('/')
+        toast.success('Succsfully sign in',{ onClose: ()=>{
+         location.state ?   navigate(`${location.state}`) : navigate('/')
+        }})
+      
+      
       })
       .catch(err=>{
         console.error(err)
