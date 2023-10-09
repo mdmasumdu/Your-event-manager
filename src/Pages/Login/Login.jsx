@@ -26,9 +26,9 @@ const Login = () => {
         login(email,password)
         .then(result=> {
           console.log(result.user)
-          toast.success('succsfully logged in',{ onClose: ()=>{
+          toast.success('succsfully logged in')
             location.state ?   navigate(`${location.state}`) : navigate('/')
-           }})
+           
          
           
         })
@@ -43,9 +43,9 @@ const Login = () => {
       googlesignin()
       .then(result=> {
         console.log(result.user)
-        toast.success('Succsfully sign in',{ onClose: ()=>{
+        toast.success('Succsfully sign in')
          location.state ?   navigate(`${location.state}`) : navigate('/')
-        }})
+
       
       
       })
